@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/schType"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:layout_marginEnd="20dp"
+        android:contentDescription="@string/scheduled_exercise_type"
+        android:src="@drawable/ic_walk"/>
+
+    <TextView
+        android:id="@+id/schDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.5"
+        android:textAlignment="textStart"
+        android:layout_marginEnd="15dp"
+        android:textSize="25sp"
+        android:text="" />
+
+    <TextView
+        android:id="@+id/schTime"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_weight="0.5"
+        android:textSize="25sp"
+        android:layout_marginEnd="15dp"
+        android:textAlignment="textStart"
+        android:text="" />
+
+    <ImageView
+        android:id="@+id/schEdit"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_weight="0.5"
+        android:contentDescription="@string/edit_icon"
+        android:src="@drawable/ic_edit"/>
+
+    <ImageView
+        android:id="@+id/schDelete"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_weight="0.5"
+        android:contentDescription="@string/delete_icon"
+        android:src="@drawable/ic_delete"/>
+</LinearLayout>

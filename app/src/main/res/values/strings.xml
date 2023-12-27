@@ -1,0 +1,40 @@
+<resources>
+    <string name="app_name">FitnessTracker</string>
+    <string name="schedule">Schedule</string>
+    <string name="exercise">Exercise</string>
+    <string name="history">History</string>
+    <string name="statistics">Statistics</string>
+    <string name="scheduled_exercise_type">Scheduled Exercise Type</string>
+    <string name="edit_icon">Edit Icon</string>
+    <string name="delete_icon">Delete Icon</string>
+    <string name="schedule_exercise">Schedule Exercise</string>
+    <string name="past_exercises">Past Exercises</string>
+    <string name="date">Date</string>
+    <string name="schedule_icon">Schedule Icon</string>
+    <string name="time">Time</string>
+    <string name="time_icon">Time Icon</string>
+    <string name="walk_icon">Walk Icon</string>
+    <string name="run_icon">Run Icon</string>
+    <string name="send_reminder">Send Reminder?</string>
+    <string name="save">Save</string>
+    <string name="activityIcon">Activity Icon</string>
+    <string name="walk">WALK</string>
+    <string name="run">RUN</string>
+    <string name="activity">Activity</string>
+    <string name="timer">00:00:00:00</string>
+    <string name="total_time">Total Time</string>
+    <string name="timer_format">%1$02d:%2$02d:%3$02d:%4$02d</string>
+    <string name="steps">steps</string>
+    <string name="total_steps">Total Steps</string>
+    <string name="zero">0</string>
+    <string name="total_distance">Total Distance</string>
+    <string name="average_speed">Average Speed</string>
+    <string name="kilometers">%1$.2f km</string>
+    <string name="kilometers_per_hour">%1$.2f km/hr</string>
+    <string name="start">Start</string>
+    <string name="finish">Finish</string>
+    <string-array name="exercise_array">
+        <item>Average Speed Per Run</item>
+        <item>Step Count per Walk</item>
+    </string-array>
+</resources>

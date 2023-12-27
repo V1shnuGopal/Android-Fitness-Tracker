@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.fragments.StatisticsFragment">
+
+    <com.github.mikephil.charting.charts.BarChart
+        android:id="@+id/chart"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/totalTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/timer"
+        android:layout_marginStart="50dp"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toTopOf="@+id/chart"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/totalSteps"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/totalTimeLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/total_time"
+        app:layout_constraintEnd_toEndOf="@+id/totalTime"
+        app:layout_constraintStart_toStartOf="@+id/totalTime"
+        app:layout_constraintTop_toBottomOf="@+id/totalTime" />
+
+
+    <TextView
+        android:id="@+id/totalSteps"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/steps"
+        android:layout_marginStart="40dp"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toTopOf="@+id/chart"
+        app:layout_constraintEnd_toStartOf="@+id/totalTime"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/totalStepsLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/total_steps"
+        app:layout_constraintEnd_toEndOf="@+id/totalSteps"
+        app:layout_constraintStart_toStartOf="@+id/totalSteps"
+        app:layout_constraintTop_toBottomOf="@+id/totalSteps" />
+
+    <TextView
+        android:id="@+id/totalDistance"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/zero"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toTopOf="@+id/chart"
+        app:layout_constraintEnd_toEndOf="@+id/totalSteps"
+        app:layout_constraintStart_toStartOf="@+id/totalSteps"
+        app:layout_constraintTop_toBottomOf="@+id/totalSteps" />
+
+    <TextView
+        android:id="@+id/totalDistanceLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/total_distance"
+        app:layout_constraintEnd_toEndOf="@+id/totalDistance"
+        app:layout_constraintStart_toStartOf="@+id/totalDistance"
+        app:layout_constraintTop_toBottomOf="@+id/totalDistance" />
+
+    <TextView
+        android:id="@+id/avgSpeed"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/zero"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toTopOf="@+id/chart"
+        app:layout_constraintEnd_toEndOf="@+id/totalTime"
+        app:layout_constraintStart_toStartOf="@+id/totalTime"
+        app:layout_constraintTop_toBottomOf="@+id/totalTime" />
+
+    <TextView
+        android:id="@+id/avgSpeedLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/average_speed"
+        app:layout_constraintEnd_toEndOf="@+id/avgSpeed"
+        app:layout_constraintStart_toStartOf="@+id/avgSpeed"
+        app:layout_constraintTop_toBottomOf="@+id/avgSpeed" />
+
+    <Spinner
+        android:id="@+id/chartSelect"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/chart" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
